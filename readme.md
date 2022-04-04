@@ -6,6 +6,7 @@
 + Array methods (map, find, sort, splice, slice, ...)
 + DOM/BOM
 + Local Storage
-
+4. Thư viện khác
++ font-awesome 5.15.1
 ## Link sản phẩm
 + https://khoanguyen84.github.io/UserManger/

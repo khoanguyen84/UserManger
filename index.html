@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User manager</title>
     <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
@@ -28,8 +29,13 @@
                     <input type="email" name="email" id="email" class="form-control">
                 </div>
                 <div class="form-group">
+                    <label for="email">Status</label>
+                    <select name="status" id="status" class="form-control">
+                    </select>
+                </div>
+                <div class="form-group">
                     <label></label>
-                    <a href="javascript:;" class="btn btn-primary">Create user</a>
+                    <a href="javascript:;" class="btn btn-primary" onclick="createUser()">Create user</a>
                 </div>
             </div>
         </div>
@@ -48,72 +54,8 @@
                         <th>Operations</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <img class="img-sm" src="https://i.pravatar.cc/150?img=2" alt="">
-                        </td>
-                        <td>Khoa Nguyễn</td>
-                        <td>0935216417</td>
-                        <td>khoa.nguyen@codegym.vn</td>
-                        <td>Active</td>
-                        <td>
-                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <img class="img-sm" src="https://i.pravatar.cc/150?img=2" alt="">
-                        </td>
-                        <td>Khoa Nguyễn</td>
-                        <td>0935216417</td>
-                        <td>khoa.nguyen@codegym.vn</td>
-                        <td>Active</td>
-                        <td>
-                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <img class="img-sm" src="https://i.pravatar.cc/150?img=2" alt="">
-                        </td>
-                        <td>Khoa Nguyễn</td>
-                        <td>0935216417</td>
-                        <td>khoa.nguyen@codegym.vn</td>
-                        <td>Active</td>
-                        <td>
-                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <img class="img-sm" src="https://i.pravatar.cc/150?img=2" alt="">
-                        </td>
-                        <td>Khoa Nguyễn</td>
-                        <td>0935216417</td>
-                        <td>khoa.nguyen@codegym.vn</td>
-                        <td>Active</td>
-                        <td>
-                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <img class="img-sm" src="https://i.pravatar.cc/150?img=2" alt="">
-                        </td>
-                        <td>Khoa Nguyễn</td>
-                        <td>0935216417</td>
-                        <td>khoa.nguyen@codegym.vn</td>
-                        <td>Active</td>
-                        <td>
-                            
-                        </td>
-                    </tr>
+                <tbody id="tbUsers">
+                   
                 </tbody>
             </table>
         </div>
